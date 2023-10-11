@@ -1,0 +1,26 @@
+.home-wrapper {
+    flex-direction: row;
+    gap: 50px;
+    padding: 100px;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.3rem;
+}
+
+.quote-wrapper > h2 {
+    font-family: 'Playfair Italic';
+    font-size: 1.3rem;
+    position: relative;
+    left: 50px;
+}
+
+.home-wrapper > img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
