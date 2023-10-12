@@ -20,6 +20,11 @@ body {
     background-blend-mode: darken;
 }
 
+img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .main-wrapper {
     display: flex;
     flex-direction: column;
@@ -75,6 +80,8 @@ body {
     border-radius: 15px;
     color: white;
 }
+
+
 
 /* UTILITY CLASSES */
 .centered-v {

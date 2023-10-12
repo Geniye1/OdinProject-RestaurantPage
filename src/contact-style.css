@@ -1,0 +1,14 @@
+.contact-wrapper {
+    gap: 40px;
+    padding: 50px;
+}
+
+.message-wrapper {
+    width:600px;
+
+    font-size: 1.3rem;
+}
+
+#info-id {
+    text-decoration: underline;
+}

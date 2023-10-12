@@ -1,0 +1,17 @@
+.about-wrapper {
+    flex-direction: column;
+    padding: 80px;
+}
+
+.about-wrapper > img {
+    width: 350px;
+    height: 350px;
+}
+
+.about-wrapper > h1 {
+    margin-bottom: 20px;
+}
+
+.about-wrapper > p {
+    font-size: 1.3rem;
+}
