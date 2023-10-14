@@ -72,6 +72,10 @@ img {
     align-items: center;
 }
 
+.title-wrapper:hover {
+    cursor: pointer;
+}
+
 .title-wrapper > h1 {
     font-family: 'Dancing';
     font-size: 4rem;

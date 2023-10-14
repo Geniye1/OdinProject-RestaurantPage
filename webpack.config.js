@@ -4,7 +4,8 @@ const path = require('path');
 module.exports = {
     entry: {
         main: './src/index.js',
-        init: './src/init.js'
+        init: './src/init.js',
+        menu: './src/menu.js'
     },
     mode: 'development',
     output: {

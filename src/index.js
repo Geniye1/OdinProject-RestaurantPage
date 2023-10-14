@@ -12,13 +12,39 @@ import './assets/Images/pizza_wid_charms.jpeg'
 import './assets/Images/selfie.jpg'
 
 import InitPage from './init';
+import DisplayMenu from './menu'
 
 const contentContainer = document.querySelector('.content-container');
-const menuTabButton = document.querySelector('menu-tab-button');
-const contactTabButton = document.querySelector('contact-tab-button');
-const aboutTabButton = document.querySelector('about-tab-button');
+const homeTabButton = document.querySelector('.title-wrapper');
+const menuTabButton = document.querySelector('#menu-tab-button');
+const contactTabButton = document.querySelector('#contact-tab-button');
+const aboutTabButton = document.querySelector('#about-tab-button');
 
-//menuTabButton.addEventListener('click', );
+let displayedContent = InitPage();
 
-contentContainer.appendChild(InitPage());
+homeTabButton.addEventListener('click', PopulateHome);
+menuTabButton.addEventListener('click', PopulateMenu);
+contactTabButton.addEventListener('click', PopulateContact);
+aboutTabButton.addEventListener('click', PopulateAbout);
 
+contentContainer.appendChild(displayedContent);
+
+function PopulateHome() {
+    displayedContent.remove();
+    displayedContent = InitPage();
+    contentContainer.appendChild(displayedContent);
+}
+
+function PopulateMenu() {
+    displayedContent.remove();
+    displayedContent = DisplayMenu();
+    contentContainer.appendChild(displayedContent);
+}
+
+function PopulateContact() {
+
+}
+
+function PopulateAbout() {
+
+}
