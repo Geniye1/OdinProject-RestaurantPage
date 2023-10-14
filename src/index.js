@@ -13,6 +13,8 @@ import './assets/Images/selfie.jpg'
 
 import InitPage from './init';
 import DisplayMenu from './menu'
+import DisplayContact from './contact'
+import DisplayAbout from './about'
 
 const contentContainer = document.querySelector('.content-container');
 const homeTabButton = document.querySelector('.title-wrapper');
@@ -42,9 +44,13 @@ function PopulateMenu() {
 }
 
 function PopulateContact() {
-
+    displayedContent.remove();
+    displayedContent = DisplayContact();
+    contentContainer.appendChild(displayedContent);
 }
 
 function PopulateAbout() {
-
+    displayedContent.remove();
+    displayedContent = DisplayAbout();
+    contentContainer.appendChild(displayedContent);
 }
