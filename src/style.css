@@ -54,6 +54,18 @@ img {
     gap: 100px;
 }
 
+.nav-wrapper > h2 {
+    cursor: pointer;
+}
+
+.nav-wrapper > h2:hover {
+    text-decoration: underline;
+}
+
+.nav-wrapper > h2:active {
+    color: rgb(179, 179, 179);
+}
+
 .title-wrapper {
     display: flex;
     flex-direction: column;
@@ -80,8 +92,6 @@ img {
     border-radius: 15px;
     color: white;
 }
-
-
 
 /* UTILITY CLASSES */
 .centered-v {
